@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons & Actions</title>
+  </head>
+  <body>
+    <button id="theme-toggle" type="button">Toggle theme</button>
+    <button id="sidebar-toggle" type="button">Open sidebar</button>
+    <aside data-sidebar>
+      <a href="/index.html">Home</a>
+      <a href="/forms.html">Forms & Inputs</a>
+      <a href="/windows.html">Windows</a>
+    </aside>
+    <h1>Buttons & Actions</h1>
+    <button id="primary-btn" type="button">Primary action</button>
+    <p id="button-output">No button clicked yet</p>
+    <script>
+      document.getElementById('primary-btn').addEventListener('click', () => {
+        document.getElementById('button-output').textContent = 'Primary button clicked';
+      });
+    </script>
+  </body>
+</html>

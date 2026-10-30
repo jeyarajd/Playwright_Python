@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+addopts = ["-ra", "-q", "--strict-markers"]
+testpaths = ["tests"]
+markers = [
+    "smoke: smoke tests",
+    "regression: regression tests",
+    "ui: ui tests",
+]
